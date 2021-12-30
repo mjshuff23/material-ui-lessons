@@ -34,9 +34,31 @@ For example, let's say that you want the width of each Grid item to take up 75% 
 screen width when the small breakpoint is active. You could set the sm value to 9 (9/12 =
 0.75)
 
+[Code Example](../material-ui-lesson/src/components/MUIGrid.js)
+
 You can use the `auto` value for every breakpoint value if you're unsure of which value to
 use. I would recommend replacing auto with a value from 1–12 at some point. The auto value
 is good enough that you can get started on other things without worrying too much about
 layout, but it's far from perfect for your production app. At least by setting up auto this
 way, you have all of your Grid components and breakpoint properties in place. You just
 need to play with the numbers until everything looks good.
+
+[Code Example](../material-ui-lesson/src/components/AutoGrid.js)
+
+## Filling Space
+
+With some layouts, it is impossible to have your grid items occupy the entire width of the
+screen. Using the justify property, you can control how grid items fill the available space
+in the row.
+
+Let's say that you have four Paper components to render in a grid. Inside each of these
+Paper components, you have three Chip components, which are nested grid items.
+
+[Code Example](../material-ui-lesson/src/components/JustifiedGrid.js)
+
+
+## Additional Resources
+
+- [Grid API documentation](https://material-ui.com/api/grid/)
+- [Grid Demos](https://material-ui.com/layout/grid/)
+- [Breakpoint](https://material-ui.com/layout/breakpoints/)

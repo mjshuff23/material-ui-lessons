@@ -6,8 +6,9 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = (theme) => ({
   root: {
     flexGrow: 1,
-    margin: '20px',
+    margin: '0 20px',
     border: '2px solid red',
+    textAlign: 'center',
   },
   paper: {
     padding: theme.spacing(2),
@@ -21,6 +22,7 @@ const styles = (theme) => ({
 
 const AutoGrid = withStyles(styles)(({ classes }) => (
   <div className={classes.root}>
+    <h1>Auto Grid</h1>
     <Grid container spacing={4}>
       <Grid item xs='auto' sm='auto' md='auto'>
         <Paper className={classes.paper}>xs=auto sm=auto md=auto</Paper>
