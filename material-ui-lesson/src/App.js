@@ -1,15 +1,18 @@
 import React from 'react';
-import AutoGrid from './components/AutoGrid.js';
-import JustifiedGrid from './components/JustifiedGrid.js';
-import MUIGrid from './components/MUIGrid.js';
+import MUIGrid from './components/Grid/MUIGrid';
+import AutoGrid from './components/Grid/AutoGrid';
+import JustifiedGrid from './components/Grid/JustifiedGrid';
+import AbstractingContainersAndItems from './components/Grid/AbstractingContainers';
 
 const App = () => (
   <div>
     <MUIGrid />
+    <br />
     <AutoGrid />
     <br />
-    <br />
     <JustifiedGrid />
+    <br />
+    <AbstractingContainersAndItems />
   </div>
 );
 
