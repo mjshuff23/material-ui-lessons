@@ -24,6 +24,19 @@ const AbstractingContainersAndItems = withStyles(styles)(({ classes }) => (
   <div className={classes.root}>
     <h1>Abstracting Containers and Items</h1>
     <Container spacing={4}>
+      {/* 
+        Notice how we're redundantly passing the breakpoints for every `Item`
+        component.  Instead of doing this, we can add the breakpoints to our
+        declaration on line 21 and avoid redundancy, allowing us to keep our
+        code DRY  
+
+        Any time you need to override any of the breakpoint properties that
+        you've set in the Item component, you just need to pass the property to
+        Item. For example, if you have a specific case where you need md to be
+        6, you can just write <Item md={6}>. This works because, in the Item
+        component, {...props} is passed after the default values, meaning that
+        they override any properties with the same name.
+      */}
       <Item xs={12} sm={6} md={3}>
         <Paper className={classes.paper}>xs=12 sm=6 md=3</Paper>
       </Item>
