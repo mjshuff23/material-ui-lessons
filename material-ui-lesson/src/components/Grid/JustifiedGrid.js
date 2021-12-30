@@ -24,7 +24,7 @@ const JustifiedGrid = withStyles(styles)(({ classes, justify }) => (
     <Grid container spacing={4}>
       <Grid item xs={12} sm={6} md={3}>
         <Paper className={classes.paper}>
-          <Grid container justify='center'>
+          <Grid container justifyContent='center'>
             <Grid item>
               <Chip label='xs=12' />
             </Grid>
@@ -39,7 +39,7 @@ const JustifiedGrid = withStyles(styles)(({ classes, justify }) => (
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
         <Paper className={classes.paper}>
-          <Grid container justify='flex-end'>
+          <Grid container justifyContent='flex-end'>
             <Grid item>
               <Chip label='xs=12' />
             </Grid>
@@ -54,7 +54,7 @@ const JustifiedGrid = withStyles(styles)(({ classes, justify }) => (
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
         <Paper className={classes.paper}>
-          <Grid container justify='space-between'>
+          <Grid container justifyContent='space-between'>
             <Grid item>
               <Chip label='xs=12' />
             </Grid>
@@ -69,7 +69,7 @@ const JustifiedGrid = withStyles(styles)(({ classes, justify }) => (
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
         <Paper className={classes.paper}>
-          <Grid container justify='space-around'>
+          <Grid container justifyContent='space-around'>
             <Grid item>
               <Chip label='xs=12' />
             </Grid>
