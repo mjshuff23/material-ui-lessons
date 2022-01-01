@@ -1,21 +1,14 @@
 import React from 'react';
-import MUIGrid from './components/Grid/MUIGrid';
-import AutoGrid from './components/Grid/AutoGrid';
-import JustifiedGrid from './components/Grid/JustifiedGrid';
-import AbstractingContainersAndItems from './components/Grid/AbstractingContainers';
-import FixedColumnLayout from './components/Grid/FixedColumnGrid';
+import { Outlet, Link } from 'react-router-dom';
 
 const App = () => (
   <div>
-    <MUIGrid />
+    <nav>
+      <Link to='/grids'>Grids</Link>
+    </nav>
+    <hr />
     <br />
-    <AutoGrid />
-    <br />
-    <JustifiedGrid />
-    <br />
-    <AbstractingContainersAndItems />
-    <br />
-    <FixedColumnLayout />
+    <Outlet />
   </div>
 );
 
