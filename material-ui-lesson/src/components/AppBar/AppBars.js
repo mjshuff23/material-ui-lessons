@@ -9,6 +9,8 @@ function AppBars() {
       <Link to='hidescroll'>Hide AppBar With Scroll</Link>
       <br />
       <Link to='toolbarabstraction'>Toolbar Abstraction</Link>
+      <br />
+      <Link to='withnavigation'>With Navigation</Link>
       <Outlet />
     </div>
   );

@@ -13,6 +13,7 @@ import AppBars from './components/AppBar/AppBars';
 import FixedPosition from './components/AppBar/FixedPosition';
 import ScrolledAppBar from './components/AppBar/ScrolledAppBar';
 import ToolbarAbstraction from './components/AppBar/ToolbarAbstraction';
+import WithNavigation from './components/AppBar/WithNavigation';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -37,6 +38,7 @@ ReactDOM.render(
             path='appbars/toolbarabstraction'
             element={<ToolbarAbstraction />}
           />
+          <Route path='appbars/withnavigation/*' element={<WithNavigation />} />
         </Route>
       </Routes>
     </BrowserRouter>
