@@ -12,6 +12,7 @@ import Grids from './components/Grid/Grids';
 import AppBars from './components/AppBar/AppBars';
 import FixedPosition from './components/AppBar/FixedPosition';
 import ScrolledAppBar from './components/AppBar/ScrolledAppBar';
+import ToolbarAbstraction from './components/AppBar/ToolbarAbstraction';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -32,6 +33,10 @@ ReactDOM.render(
           <Route path='appbars' element={<AppBars />} />
           <Route path='appbars/fixed' element={<FixedPosition />} />
           <Route path='appbars/hidescroll' element={<ScrolledAppBar />} />
+          <Route
+            path='appbars/toolbarabstraction'
+            element={<ToolbarAbstraction />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

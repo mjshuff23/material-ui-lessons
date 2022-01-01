@@ -4,6 +4,7 @@
 - [**Material-UI App Bars**](#material-ui-app-bars)
   - [**Fixed Positioning and CSS Grid**](#fixed-positioning-and-css-grid)
   - [**Hide On Scroll**](#hide-on-scroll)
+  - [Toolbar Abstraction](#toolbar-abstraction)
   - [**Additional Resources**](#additional-resources)
 
 # **Material-UI App Bars**
@@ -27,6 +28,19 @@ To hide the `AppBar` component while the user is scrolling down, you have to kno
 - [Code Example](../material-ui-lesson/src/components/AppBar/ScrolledAppBar.js)
 
 `Fade` can also be replaced with the `Grow` component
+
+## Toolbar Abstraction
+
+Toolbar code can get verbose if you have to render toolbars in several places. To address
+this, you can create your own Toolbar component that encapsulates the content patterns of
+toolbars, making it easier to render AppBar components in several places.
+
+Let's assume that your app renders AppBar components on several screens. Each
+AppBar component also renders Menu and title to the left, as well as Button to the right.
+Here's how you can implement your own AppBar component so that it's easier to use on
+several screens:
+
+- [Code Example](../material-ui-lesson/src/components/AppBar/ToolbarAbstraction.js)
 
 ## **Additional Resources**
 

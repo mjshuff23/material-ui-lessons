@@ -7,6 +7,8 @@ function AppBars() {
       <Link to='fixed'>Fixed</Link>
       <br />
       <Link to='hidescroll'>Hide AppBar With Scroll</Link>
+      <br />
+      <Link to='toolbarabstraction'>Toolbar Abstraction</Link>
       <Outlet />
     </div>
   );
