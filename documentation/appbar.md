@@ -26,9 +26,14 @@ To hide the `AppBar` component while the user is scrolling down, you have to kno
 
 - [Code Example](../material-ui-lesson/src/components/AppBar/ScrolledAppBar.js)
 
+`Fade` can also be replaced with the `Grow` component
+
 ## **Additional Resources**
 
 - [Guide to CSS Positioning](https://developer.mozilla.org/en-US/docs/Learn/)
 - [AppBar Demos](https://material-ui.com/demos/app-bar/)
 - [AppBar API Documentation](https://material-ui.com/api/app-bar/)
 - [Toolbar API Documentation](https://material-ui.com/api/toolbar/)
+- [Fade API Documentation](https://material-ui.com/api/fade/)
+- [Grow API Documentation](https://material-ui.com/api/grow/)
+- [Slide API Documentation](https://material-ui.com/api/slide/)
