@@ -18,6 +18,8 @@ const styles = (theme) => ({
     marginLeft: -12,
     marginRight: 20,
   },
+  // Add this mixin to fix content being hidden behind the toolbar due to z-index issues
+  // toolbarMargin: theme.mixins.toolbar,
 });
 
 const FixedPosition = withStyles(styles)(({ classes }) => (
@@ -38,6 +40,7 @@ const FixedPosition = withStyles(styles)(({ classes }) => (
         <Button color='inherit'>Login</Button>
       </Toolbar>
     </AppBar>
+    <div className={classes.toolbarMargin} />
     <ul>
       {new Array(500).fill(null).map((v, i) => (
         <li key={i}>{i}</li>

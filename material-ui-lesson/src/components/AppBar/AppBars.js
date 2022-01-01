@@ -5,6 +5,8 @@ function AppBars() {
   return (
     <div>
       <Link to='fixed'>Fixed</Link>
+      <br />
+      <Link to='hidescroll'>Hide AppBar With Scroll</Link>
       <Outlet />
     </div>
   );

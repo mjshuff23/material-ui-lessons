@@ -11,6 +11,7 @@ import FixedColumnLayout from './components/Grid/FixedColumnGrid';
 import Grids from './components/Grid/Grids';
 import AppBars from './components/AppBar/AppBars';
 import FixedPosition from './components/AppBar/FixedPosition';
+import ScrolledAppBar from './components/AppBar/ScrolledAppBar';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -30,6 +31,7 @@ ReactDOM.render(
           {/* App Bars */}
           <Route path='appbars' element={<AppBars />} />
           <Route path='appbars/fixed' element={<FixedPosition />} />
+          <Route path='appbars/hidescroll' element={<ScrolledAppBar />} />
         </Route>
       </Routes>
     </BrowserRouter>
