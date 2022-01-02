@@ -18,6 +18,9 @@ function Drawers() {
       </ul>
       <Link to='itemstate'>Drawer Item State</Link>
       <br />
+      <Link to='navigation'>Drawer Item Navigation</Link>
+      <br />
+      <Link to='navigation-alternate'>Drawer Item Navigation Alternate</Link>
       <Outlet />
     </div>
   );

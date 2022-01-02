@@ -4,6 +4,7 @@
 - [**Material-UI Drawers**](#material-ui-drawers)
   - [Drawer Types](#drawer-types)
   - [Drawer Item State](#drawer-item-state)
+  - [Drawer Item Navigation](#drawer-item-navigation)
   - [Additional Resources](#additional-resources)
 
 # **Material-UI Drawers**
@@ -43,6 +44,26 @@ permission checks on the user, items might be disabled or completely hidden
 - The `disabled` property is used to render the item as disabled
   - For example, Page 3 is marked as disabled by setting this property to true: This could be due to permission restrictions for the user on this particular page, or some other reason. Because this is controlled through the component state instead of rendered statically, you could update the disabled state for any menu item at any time using any mechanism that you like, such as an API call. The `hidden` property uses the same principle, except when this value is `true`, the item isn't rendered at all. In this example, Page 5 isn't rendered because it's marked as `hidden`.
 - The `items` array is filtered to remove hidden items. Then, `map()` is used to render each `ListItem` component. The `disabled` property is passed to `ListItem` and it will be visibly disabled when rendered. The `Icon` component also comes from the list item state. The `onClick()` event handler hides the drawer and updates the content label. The `onClick()` handler isn't executed when disabled list items are clicked on.
+
+## Drawer Item Navigation
+
+If your Material-UI app uses a router such as `react-router` to navigate from page to page,
+you'll probably want links as your Drawer items. To do so, you have to integrate
+components from the `react-router-dom` package.
+
+- [Code Example](../material-ui-lesson/src/components/Drawer/DrawerItemNavigation.js)
+
+By default, the `ListItem` component will render a `div` element. It accepts a `button`
+property that when true, will render a `button` element. You don't want either of these.
+Instead, you want the list items to be links that `react-router` will process. The
+`component` property accepts a custom component to use; in this example, you want to use
+the `Link` component from the `react-router-dom` package. This will render the
+appropriate link while maintaining the proper styles.
+The properties that you pass to `ListItem` are also passed to your custom component,
+which, in this case, is `Link`. This means that the required to property is passed to `Link`,
+pointing the link to /. Likewise, the onClick handler is also passed to the `Link`
+component, which is important because you want to close the temporary drawer whenever
+a link is clicked.
 
 ## Additional Resources
 

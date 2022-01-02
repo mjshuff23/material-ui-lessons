@@ -17,6 +17,8 @@ import WithNavigation from './components/AppBar/WithNavigation';
 import Drawers from './components/Drawer/Drawers';
 import DrawerTypes from './components/Drawer/DrawerTypes';
 import DrawerItemState from './components/Drawer/DrawerItemState';
+import DrawerItemNavigation from './components/Drawer/DrawerItemNavigation';
+import DrawerItemNavigationAlternate from './components/Drawer/DrawerItemNavigationAlternate';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -57,6 +59,11 @@ ReactDOM.render(
             element={<DrawerTypes variant='permanent' />}
           />
           <Route path='drawers/itemstate' element={<DrawerItemState />} />
+          <Route path='drawers/navigation' element={<DrawerItemNavigation />} />
+          <Route
+            path='drawers/navigation-alternate/*'
+            element={<DrawerItemNavigationAlternate />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
