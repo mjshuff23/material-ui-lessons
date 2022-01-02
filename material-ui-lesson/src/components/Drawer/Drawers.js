@@ -16,6 +16,7 @@ function Drawers() {
           <li>Permanent</li>
         </Link>
       </ul>
+      <Link to='itemstate'>Drawer Item State</Link>
       <br />
       <Outlet />
     </div>

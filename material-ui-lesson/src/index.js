@@ -16,6 +16,7 @@ import ToolbarAbstraction from './components/AppBar/ToolbarAbstraction';
 import WithNavigation from './components/AppBar/WithNavigation';
 import Drawers from './components/Drawer/Drawers';
 import DrawerTypes from './components/Drawer/DrawerTypes';
+import DrawerItemState from './components/Drawer/DrawerItemState';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -55,6 +56,7 @@ ReactDOM.render(
             path='drawers/permanent'
             element={<DrawerTypes variant='permanent' />}
           />
+          <Route path='drawers/itemstate' element={<DrawerItemState />} />
         </Route>
       </Routes>
     </BrowserRouter>
