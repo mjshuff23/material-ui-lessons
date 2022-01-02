@@ -19,6 +19,8 @@ import DrawerTypes from './components/Drawer/DrawerTypes';
 import DrawerItemState from './components/Drawer/DrawerItemState';
 import DrawerItemNavigation from './components/Drawer/DrawerItemNavigation';
 import DrawerItemNavigationAlternate from './components/Drawer/DrawerItemNavigationAlternate';
+import Autocomplete from './components/Autocomplete/Autocomplete';
+import Buttons from './components/Button/Buttons';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -64,6 +66,10 @@ ReactDOM.render(
             path='drawers/navigation-alternate/*'
             element={<DrawerItemNavigationAlternate />}
           />
+          {/* Autocomplete */}
+          <Route path='autocomplete' element={<Autocomplete />} />
+          {/* Buttons */}
+          <Route path='buttons' element={<Buttons />} />
         </Route>
       </Routes>
     </BrowserRouter>
