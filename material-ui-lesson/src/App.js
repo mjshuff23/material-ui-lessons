@@ -10,7 +10,8 @@ const App = withStyles(styles)(({ classes }) => (
   <div>
     <div className={classes.toolbarMargin} />
     <nav>
-      <Link to='/grids'>Grids</Link> | <Link to='/appbars'>App Bars</Link>
+      <Link to='/grids'>Grids</Link> |<Link to='/appbars'>App Bars</Link> |
+      <Link to='/drawers'>Drawers</Link>
     </nav>
     <hr />
     <br />

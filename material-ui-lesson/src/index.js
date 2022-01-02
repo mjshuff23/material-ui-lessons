@@ -14,6 +14,8 @@ import FixedPosition from './components/AppBar/FixedPosition';
 import ScrolledAppBar from './components/AppBar/ScrolledAppBar';
 import ToolbarAbstraction from './components/AppBar/ToolbarAbstraction';
 import WithNavigation from './components/AppBar/WithNavigation';
+import Drawers from './components/Drawer/Drawers';
+import DrawerTypes from './components/Drawer/DrawerTypes';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -39,6 +41,20 @@ ReactDOM.render(
             element={<ToolbarAbstraction />}
           />
           <Route path='appbars/withnavigation/*' element={<WithNavigation />} />
+          {/* Drawers */}
+          <Route path='drawers' element={<Drawers />} />
+          <Route
+            path='drawers/temporary'
+            element={<DrawerTypes variant='temporary' />}
+          />
+          <Route
+            path='drawers/persistent'
+            element={<DrawerTypes variant='persistent' />}
+          />
+          <Route
+            path='drawers/permanent'
+            element={<DrawerTypes variant='permanent' />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

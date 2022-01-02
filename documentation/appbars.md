@@ -51,3 +51,4 @@ several screens:
 - [Fade API Documentation](https://material-ui.com/api/fade/)
 - [Grow API Documentation](https://material-ui.com/api/grow/)
 - [Slide API Documentation](https://material-ui.com/api/slide/)
+- [React Router Documentation](https://reacttraining.com/react-router/)
